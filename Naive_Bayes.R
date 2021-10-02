@@ -2,7 +2,7 @@
 images <- read.csv("hw01_images.csv", header=FALSE)
 labels <- read.csv("hw01_labels.csv", header=FALSE)
 
-#implement safelog. It is used because normal log() function may have show infinity values.
+#implement safelog. It is used because normal log() function may have infinity values.
 safelog <- function(x) {
   return (log(x + 1e-100))
 }
